@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+max-width: 1200px;
+margin: auto;
+width: full;
+ }
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(39, 39, 40); 
+    padding: 20px;
+}
+
+nav h1 {
+    font-size: 24px;
+    color: rgb(57, 223, 209);
+    cursor: pointer;
+
+}
+
+nav h1:hover {
+    text-shadow: 2px 2px 4px rgb(1, 255, 238);
+    transition: text-shadow 0.3s ease;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 10px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(57, 223, 209);
+
+
+}
+
+nav ul li a:hover {
+    text-shadow: 2px 2px 4px rgb(1, 255, 238);
+    transition: text-shadow 0.3s ease;
+}
+
+/* Header */
+header {
+    background-color: rgb(40, 39, 39);
+}
+
+.d1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    padding: 20px 210px;
+}
+
+.d2 {
+    padding-right: 10px;
+    color: rgb(250, 250, 250);
+}
+
+.d2 h3 {
+    color: rgb(57, 223, 209);
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 0;
+
+}
+
+.d2 h1 {
+
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    padding: 15px 0;
+}
+
+.d2 p {
+    padding-bottom: 20px;
+}
+
+.d2 a {
+    padding: 8px 20px;
+    text-decoration: none;
+    border: 1px solid rgb(57, 223, 209);
+    border-radius: 6px;
+    color: seashell;
+
+}
+
+.d2 a:hover {
+    background-color: rgb(57, 223, 209);
+    color: rgb(40, 39, 39);
+    transition: background-color 0.6s linear;      /* It smoothly animates any change in bg-color while doing hover */
+}
+
+.d3 img {
+    width: 200px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 20px 10px 20px 10px rgba(57, 223, 209, 0.596);
+}
+
+.d3 img:hover{
+    transform: scale(1.05);      /*1= same size, >1= image zoom-in, <1= image shrinks while Hover */
+}
+
+/* Section */
+.sec1 {
+    background-color: rgb(40, 39, 39);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 120px;
+    padding: 30px 160px;
+}
+
+
+.sec2 img {
+    width: 200px;
+    height: 350px;
+    margin-left: 45px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 20px 10px 20px 10px rgba(57, 223, 209, 0.596);
+     filter:blur(1.3px);
+}
+
+.sec2 img:hover{
+    transform: scale(1.05);
+}
+
+.sec3 {
+    margin-left: 130px;
+}
+
+.sec3 img {
+    width: 20px;
+    height: 20px;
+}
+
+.sec3 h3 {
+    text-transform: uppercase;
+    color: rgb(57, 223, 209)
+}
+
+.sec3 h1 {
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+
+.sec3 span {
+    color: rgb(57, 223, 209);
+}
+
+.sec3 p {
+    color: white;
+    padding-top: 7px;
+}
+
+.sec3 a {
+    text-decoration: none;
+    border: 1px solid rgb(57, 223, 209);
+    border-radius: 6px;
+    padding: 8px 20px;
+    color: seashell;
+    display: inline-block;
+    margin: 10px 0;
+
+} 
+
+.sec3 a:hover {
+    background-color: rgb(57, 223, 209);
+    color: rgb(40, 39, 39);
+    transition: background-color 0.6s linear;
+} 
+
+.sec3 img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Section 2 */
+#sect1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 40px 200px;
+    background-color: rgb(40, 39, 39);
+    color: seashell;
+}
+
+.sect2 {
+    border: 0.1px solid rgb(57, 223, 209, 0.596);
+    border-radius: 20px;
+    margin: 10px 40px;
+    padding: 50px 40px;
+    width: 250px;
+    height: 450px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background-color: rgb(35, 35, 37);
+    box-shadow: 10px 10px 10px rgba(57, 223, 209, 0.596);
+}
+
+.sect2 img {
+    height: 250px;
+    width: 150px;
+    border-radius: 10px;
+    object-fit: fill;
+}
+
+.sect2 img:hover{
+    transform: scale(1.05);
+}
+
+
+.sect2 a {
+    text-decoration: none;
+    color: seashell;
+    border: 1px solid rgb(57, 223, 209, 0.596);
+    padding: 5px 12px;
+    border-radius: 6px;
+}
+
+.sect2 a:hover {
+    color: rgb(40, 39, 39);
+    background-color: rgb(57, 223, 209, 0.596);
+    transition: background-color 0.6s linear;
+}
