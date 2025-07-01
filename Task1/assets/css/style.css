@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-.container{
-max-width: 1200px;
-margin: auto;
-width: full;
- }
 nav {
     display: flex;
     justify-content: space-around;
@@ -249,4 +244,85 @@ header {
     color: rgb(40, 39, 39);
     background-color: rgb(57, 223, 209, 0.596);
     transition: background-color 0.6s linear;
+}
+
+@media screen and (max-width: 900px) {
+    .d1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .d2, .d3 {
+        text-align: center;
+    }
+
+    .sec1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #sect1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .sect2 {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .d1 {
+        padding: 10px;
+    }
+
+    .d2 h1 {
+        font-size: 28px;
+    }
+
+    .d2 p {
+        font-size: 14px;
+    }
+
+    .sec1, .sec2, .sec3 {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav h1 {
+        font-size: 20px;
+    }
+
+    .d2 h3 {
+        font-size: 14px;
+    }
+
+    .d2 h1 {
+        font-size: 24px;
+    }
+
+    .d2 p, .sec3 p {
+        font-size: 12px;
+    }
+
+    .d3 img, .sec2 img {
+        width: 150px;
+        height: 250px;
+    }
+
+    .sect2 {
+        width: 100%;
+        padding: 20px;
+    }
 }
